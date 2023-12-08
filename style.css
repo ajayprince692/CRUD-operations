@@ -1,97 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Hedvig+Letters+Serif:opsz@12..24&display=swap");
-
+html,
 body {
-  height: 100vh;
-  margin: 0 50px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: repeating-linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(45deg, rgb(18, 105, 233), rgb(166, 255, 155));
+}
+
+#wrapper h2 {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  background-image: repeating-linear-gradient(
+      45deg,
+      rgba(97, 97, 97, 0.1) 0px,
+      rgba(97, 97, 97, 0.1) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(90deg, rgb(43, 43, 43), rgb(43, 43, 43));
+  font-size: 2em;
+  color: #4e6fe6;
+  letter-spacing: 1px;
+  border-radius: 10%;
+}
+input {
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-top: 30px;
+  height: 2.5em;
+  width: 250px;
+  padding-left: 10px;
+}
+
+input:active {
+  border: none;
+}
+#wrapper {
+  height: 500px;
+  width: 400px;
+  margin: 200px auto;
   background-image: repeating-linear-gradient(
       135deg,
       rgba(0, 0, 0, 0.05),
-      rgba(0, 0, 0, 0.06),
+      rgba(0, 0, 0, 0.08),
+      rgba(0, 0, 0, 0.03),
+      rgba(0, 0, 0, 0.03),
+      rgba(0, 0, 0, 0.08),
       rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.09),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.03),
       transparent,
-      rgba(0, 0, 0, 0.05),
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.06),
-      rgba(0, 0, 0, 0.02),
-      rgba(0, 0, 0, 0.05),
-      rgba(0, 0, 0, 0.04),
-      rgba(0, 0, 0, 0.02),
-      rgba(0, 0, 0, 0.07) 3px
+      rgba(0, 0, 0, 0.07),
+      rgba(0, 0, 0, 0.03),
+      rgba(0, 0, 0, 0.01) 4px
     ),
-    linear-gradient(90deg, rgb(63, 122, 63), rgb(218, 204, 62));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.todo {
-  color: rgb(10, 10, 10);
-  height: 550px;
-  width: 400px;
-  border: 4px solid black;
-  border-radius: 5px;
-  padding: 15px;
-  margin-top: 8%;
-  overflow-y: auto;
-  background-image: radial-gradient(
-    circle at center center,
-    rgb(234, 238, 79),
-    rgb(250, 124, 72)
-  );
-}
-body ::-webkit-scrollbar{
-  width: 0 !important;
-}
-
-#base {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 10px;
-  background-image: radial-gradient(
-    circle at center center,
-    rgb(71, 71, 71),
-    rgb(8, 8, 8)
-  );
-  color: aliceblue;
-  border-radius: 15px;
-  cursor: pointer;
-}
-.fa-plus {
-  padding: 3px;
-  background-color: rgb(42, 52, 165);
-  border: 5px;
-  border-radius: 3px;
-}
-#tasks {
-  display: grid;
-  gap: 15px;
-  grid-template-columns: 1fr;
-}
-#tasks div {
-  background-image: radial-gradient(
-    circle at center center,
-    rgb(86, 197, 113),
-    rgb(77, 181, 95),
-    rgb(67, 165, 77),
-    rgb(58, 149, 59),
-    rgb(48, 133, 41)
-  );
-  border: 1px solid black;
-  padding: 7px;
-  display: grid;
-  gap: 5px;
+    linear-gradient(135deg, rgb(239, 145, 97), rgb(153, 53, 18));
   border-radius: 10px;
+  border: 3px solid black;
+  padding: 30px;
 }
-#tasks div.options {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+
+button {
+  margin-top: 20px;
+  background-color: #ffeba7;
+  border-radius: 4px;
+  height: 44px;
+  font-weight: 600;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  border: none;
+  color: #102770;
+  font-size: larger;
 }
-#tasks div.options i {
+
+button:hover {
   cursor: pointer;
 }
-#msg{
-  color: red;
+#todoList {
+  color: white;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+#todoList p {
+  margin: 10px 0px;
+}
+
+#todoList p:hover {
+  cursor: pointer;
 }
